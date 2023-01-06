@@ -8,7 +8,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | [Blogr]</title>
-
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -18,12 +17,13 @@
   <div class="head">
     <nav class="nav">
       <div class="nav-links">
-        <img src="assets/images/logo.svg"
+        <img src="assets/images/logo.svg" 
              alt="blogr logo" class="logo"
              width="101"
              height="40">
-         <ul>
-          <li><a href="#">Product
+         <ul class="nav-list">
+          <li>
+            <a href="#" class="nav-item">Product
             <i>
               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
               <path fill="none" stroke="#FFF" 
@@ -39,7 +39,7 @@
                 <li><a href="#">Integration</a></li>
               </ul>
             </div></li>
-          <li><a href="#">Company
+          <li><a href="#" class="nav-item">Company
             <i>
               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
               <path fill="none" stroke="#FFF" 
@@ -56,7 +56,7 @@
           </div>
           </li>
           <li>
-            <a href="#">Connect
+            <a href="#" class="nav-item">Connect
               <i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
                 <path fill="none" stroke="#FFF" 
@@ -76,32 +76,37 @@
 
           <div class="nav-links nav-links__cta">
             <ul>
-              <li><a href="#">Login</a></li>
-              <li><a href="#" id="btn-home">Sign Up</a></li>
+              <li><a href="#" class="nav-item">Login</a></li>
+              <li><a href="#" id="btn-home" class="nav-item">Sign Up</a></li>
             </ul>
           </div>
-                <img src="assets/images/icon-hamburger.svg" 
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+                <!-- <img src="assets/images/icon-hamburger.svg" 
                      alt="hamburger menu" 
-                     class="burger-menu">
+                     class="burger-menu"> -->
     </nav>
-    <div class="head-content">
+    <section class="head-content">
       <div class="head-txt">
         <header class="header">
           <h1>A modern publishing platform</h1>
         </header>
         <p>Grow your audience and build your online brand</p>
       </div>
-    </div>
-    <div class="call-to-actn">
+    </section>
+    <section class="call-to-actn">
       <a href="#" class="call-to-actn-1">Start for Free</a>
       <a href="#" class="call-to-actn-2">Learn More</a>
-    </div>
+    </section>
   </div>
   <main class="main">
       <h2 class="main-first-child">Designed for the future</h2>
       <section class="section section-1">
       <picture class="img">
-          <source media="(min-width:760px)"
+          <source media="(min-width:786px)"
            srcset="./assets/images/illustration-editor-desktop.svg">
           <img src="../assets/images/illustration-editor-mobile.svg"
                alt="illustration-editor-mobile" 
@@ -136,7 +141,7 @@
     </section>
     <section class="section section-3">
       <picture>
-        <source media="(min-width:760px)" 
+        <source media="(min-width: 786px)" 
                 srcset="./assets/images/illustration-laptop-desktop.svg">
         <img src="../assets/images/illustration-laptop-mobile.svg" 
              alt="illustration-laptop-desktop">
@@ -162,8 +167,8 @@
          alt="logo.svg" width="101w" height="40w">
     <div class="footer-links">
       <ul class="product-link">
-        <li>
-          <a href="#" class="main-footer-link">Product</a>
+        <li class="main-footer__list">
+          <a href="#" class="main-footer__link">Product</a>
         </li>
         <li>
           <a href="#">Overview</a>
@@ -182,8 +187,8 @@
         </li>
       </ul>
       <ul class="company-link">
-        <li>
-          <a href="#" class="main-footer-link">Company</a>
+        <li class="main-footer__list">
+          <a href="#" class="main-footer__link">Company</a>
         </li>
         <li>
           <a href="#">About</a>
@@ -199,8 +204,8 @@
         </li>
       </ul>
       <ul class="Connect-link">
-        <li>
-          <a href="#" class="main-footer-link">Connect</a>
+        <li class="main-footer__list">
+          <a href="#" class="main-footer__link">Connect</a>
         </li>
         <li>
           <a href="#">Contact</a>
@@ -218,5 +223,11 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Umeokoli Victor Onyeka</a>.
   </div>
+
+
+  <script src="blogr.js">
+  </script>
+
+
 </body>
 </html>
